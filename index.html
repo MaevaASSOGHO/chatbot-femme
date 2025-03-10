@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot d'Aide</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>💙 Ma belle</h2>
+            <button id="exit-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <div class="bot-message">Bienvenue, tu n'es pas seule. Comment puis-je t’aider ?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Écris ton message..." />
+            <button onclick="sendUserMessage()">➤</button>
+            <button class="call-button" onclick="window.location.href='tel:170'">📞</button>        
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
